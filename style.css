@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    border: 1px solid; /* delete me later */
 }
 
 .logo {
@@ -29,6 +30,10 @@ header {
     border-radius: 10px;
     text-align: center;
     padding: 10px
+}
+.top-container {
+    display: flex;
+    
 }
 
 .nav-links {
@@ -46,4 +51,13 @@ header {
 
 .nav-links li a:hover {
     color: #0088A9;
+}
+
+/* This is the introductory paragraph */
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;   /* delete me later */
 }
