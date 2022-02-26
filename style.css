@@ -10,54 +10,254 @@
 li, a, .logo {
     font-family: "MedievalSharp", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
     color: #E5E7EB;
     text-decoration: none;
+    list-style: none;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 30px 10%;
-    border: 1px solid; /* delete me later */
+    
+}
+
+.topContainer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;    
 }
 
 .logo {
     cursor: pointer;
     background-color: #0088A9;
-    width: 100px;
     border-radius: 10px;
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    margin-left: 20%;
+    font-size: 24px;
+    color: #F9FAF8;
 }
-.top-container {
+
+nav {
+    margin-right: 20%;
+}
+
+nav ul {
     display: flex;
-    
 }
 
-.nav-links {
-    list-style: none;
+nav li {
+    padding: 20px;
 }
 
-.nav-links li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav-links li a {
+nav li a:hover {
     transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
     color: #0088A9;
 }
-
-/* This is the introductory paragraph */
 
 .intro {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px;   /* delete me later */
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.leftIntro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 10%;
+    color: gray;
+}
+
+.heading {
+    font-weight: 800;
+    color: #F9FAF8;
+    font-size: 48px;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.text {
+    margin: 10px 0 10px 0;
+    width: 425px;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.signUp {
+    width: 100px;
+    background: #3882F6;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.imagePlaceholder {
+    margin-right: 20%;
+    margin-top: 10%;
+    width: 1000px;
+    height: 240px;
+    background: #95979b;
+    text-align: center;
+    color: #E5E7EB;
+    padding-top: 122px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 100%;
+}
+
+.infoHeading {
+    margin: 50px 50px 20px 50px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    background: white;
+}
+
+.topInfoRow {
+    display: flex;
+    margin: 0 50px 10px 50px;
+    background: white;
+    align-items: center;
+}
+
+.infoImage {
+    width: 175px;
+    height: 175px;
+    border: 3px solid blue;
+    border-radius: 15px;
+    background: white;
+    margin: 30px 30px 0 30px;
+}
+
+.btmInfoRow {
+    display: flex;
+    background: white;
+    align-items: center;
+}
+
+.infoText {
+    background: white;
+    width: 175px;
+    height: 175px;
+    margin: 0 30px 0 30px;
+    font-size: 18px;
+    color: rgb(110, 109, 109);
+}
+
+.quoteContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #E5E7Eb;
+
+}
+
+.quote {
+    background: #E5E7Eb;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 500;
+    width: 50%;
+    padding: 150px 150px 0 150px;
+}
+
+.quoteSignature {
+    display: flex;
+    background: #E5E7Eb;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1F2937;
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 150px;
+}
+
+.callToAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 100px;
+    margin-bottom: 100px;
+}
+
+.ctaContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    background: #3882F6;
+    border-radius: 10px;
+}
+
+.ctaLeft {
+    padding: 50px;
+    background: #3882F6;
+    border-radius: 10px;
+}
+
+.ctaHeading {
+    background: #3882F6;
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F9FAF8;
+    padding: 2.5px;
+}
+
+.ctaText {
+    background: #3882F6;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 2.5px;
+
+}
+
+.ctaButton {
+    background: #3882F6;
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 125px;
+    height: 40px;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
